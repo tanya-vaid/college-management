@@ -1,0 +1,104 @@
+<%- include('../templates/aheader') %>
+
+<div class="mf">
+  <div class="hp1">
+<div class="container signup">
+  <p>Student Registration</p>
+  <form action="/admin/student_register" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter name"
+       
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea
+        type="text"
+        rows="6"
+        name="address"
+        id="address"
+        class="form-control"
+        placeholder="Enter address"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="course">Select Course</label>
+      <select name="course" id="course">
+      
+        <option value="bca">B.C.A.</option>
+        
+        <option value="btech">B.Tech.</option>
+        
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="streme">Select Streme</label>
+      <select name="streme" id="streme">
+        
+        <option value="computers">Computers</option>
+       
+        <option value="electrical">Electrical</option>
+        
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="form-control"
+        placeholder="Enter password"
+      />
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+<%- include('../templates/afooter') %>
+<script src="/js/jquery.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#course").change(function () {
+      var cr = $("#course").val();
+      $('#streme').empty()
+      $('#select2').append('<option value="default">Select an option</option>');
+      if (cr == "bca") {
+                        
+        $("#streme").append(new Option("Computer","computer"));
+      }
+      else if(cr == "btech") {
+        $("#streme").append(new Option("CSE","computers"));
+        $("#streme").append(new Option("EE","elect"));
+        
+        
+      }
+     
+      
+    }).change();
+  });
+</script>

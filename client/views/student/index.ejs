@@ -1,0 +1,29 @@
+<%- include('../templates/sheader') ,{fuser}  %>
+<input id="kk" name="kk" type="hidden" name="hemail" value="<%= fuser.email %>" id="">
+ <div class="hp4">
+    <div class="container sm">
+        <table class="table table-striped tsm">
+            <tr>
+                
+                <th>Name</th>
+                <th>E-mail</th>
+                
+            </tr>
+            <tr>
+                <td><%= fuser.name %></td>
+                <td><%= fuser.email %></td>
+ 
+            </tr>
+        </table>
+
+    </div>
+ </div>
+
+<script>
+    
+     var link = $('#link').attr('href');
+     link = link + $('#kk').val()
+      $('#link').attr('href', link)
+    
+</script>
+<%- include('../templates/sfooter')   %>

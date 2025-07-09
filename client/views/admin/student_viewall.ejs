@@ -1,0 +1,30 @@
+<%- include('../templates/aheader')   %>
+<div class="mf bg-secondary bg-gradient">
+<div class="container">
+  <table class="table  table-bordered tsva">
+    <tr>
+    <th>S.No</th>
+  <th>Name</th>
+  <th>E-mail</th>
+  <th>Address</th>
+  <th>Course</th>
+  <th>Streme</th>
+  <th>Enrollment No</th>
+</tr>
+<% stu.data.forEach(function(item, index){ %>
+  
+<tr>
+    
+    <td><%= item.id %></td>
+    <td><%= item.name %></td>
+    <td><%= item.email %></td>
+    <td><%= item.address %></td>
+    <td><%= item.course %></td>
+    <td><%= item.streme %></td>
+    <td><%= item.eno %></td>
+</tr>
+<% }); %>
+</table>
+</div>
+</div>
+<%- include('../templates/afooter')   %>

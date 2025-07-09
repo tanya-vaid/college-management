@@ -1,0 +1,13 @@
+<%- include('../templates/aheader')   %>
+
+
+    <div class="hp">
+        <div class="container stc">
+            <% if(student!=null) {%>
+               <%= student.name %><span>  </span> is registered successfully in Course  <span>  </span><%= student.course %>
+             <% } %>
+        </div>
+    </div>
+
+
+<%- include('../templates/afooter')   %>

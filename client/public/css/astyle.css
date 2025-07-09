@@ -1,0 +1,250 @@
+.header{
+    height: 12rem;
+    background-color: rgb(16, 83, 124);
+}
+.title{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(249, 208, 219);
+    padding-top: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+.navbar {
+    height: 3rem;
+    float: right;
+    width: 60%;
+    
+    
+}
+.navbar ul li{
+    display:block;
+    float: left;
+    width:200px;
+    padding: 2px 10px;
+    list-style: none;
+    
+    
+}
+.navbar ul li ul {
+    display: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+}
+.navbar ul li:hover {
+    
+    background-color: #d9d6f1;
+    
+ 
+}
+
+.navbar ul li:hover ul{
+    display: block;
+    margin-left: -40px;
+    
+ 
+}
+.navbar ul li:hover>ul li{
+ background-color: #250fec;
+}
+.navbar ul li ul li{
+   
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.navbar ul li ul li:hover{
+     color: #a80913;
+    background-color: #f0b0b0;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+}
+.navbar ul li ul li:hover >a{
+    color: #a80913;
+    
+}
+
+
+.hp{
+    height: 70rem;
+    background-image: url('/img/img2.jpg')  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+.hp1{
+    height: 70rem;
+    background-image: url('/img/img7.jpg')  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hp2{
+    height: 70rem;
+    background-image: url('/img/img8.jpg')  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hp3{
+    height: 70rem;
+    background-image: url('/img/img9.jpg')  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vs{
+    width: 70%;
+    margin: auto;
+    background-color: #f18787;
+    color: rgb(12, 112, 189);
+}
+.signup{
+    margin: auto;
+    width: 40%;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    padding-top: 20px;
+    background-color: #f3e9e9;
+}
+.signup p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #480606;
+    padding: 20px;
+}
+
+.signup form .form-group{
+    padding:10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.signin{
+    margin: auto;
+    width: 20%;
+    border: 2px solid rgb(62, 114, 21);
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #c7e3c3;
+}
+
+.signin form .form-group{
+    padding:20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mc{
+    height: 70rem;
+    background-image: url('/img/img1.jpg') ;
+    
+  
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+.ssv{
+    height: 70rem;
+    background-color: #b8e1cf;
+}
+.st{
+    margin: auto;
+    width: 40%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    background-color: #ae6363;
+    color:yellow;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+
+
+
+.student_edit {
+    background-color: #ae6363;
+
+}
+.student_edit .student_eno {
+    text-align: center;
+    font-size: 22px;
+    color: #d9d6f1;
+}
+
+.hr1{
+     border-top: 8px solid rgb(101, 5, 5);
+    
+}
+
+
+
+
+
+
+
+.footer-main{
+    height: 16rem;
+    background-color: #06022c;
+}
+.rr{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: chocolate;
+    padding-top:  20px;
+}
+.cc{
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+}
+.cc p{
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+}
+ .mf{
+    height: 55rem;
+    background-image:  linear-gradient(to bottom right, rgba(225, 156, 44, 0), rgb(197, 80, 224)) ;
+    background-repeat: repeat;
+}
+.tsva{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #06022c;
+}
+
+.cpd{
+    margin: auto;
+    width: 30%;
+    background-color: #ae6363;
+    color:#b8e1cf;
+    font-size: 18px;
+    height: 25%;
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+.mf{
+    height: 60rem;
+}
+
+.stc{
+    margin: auto;
+    width: 50%;
+    color: #f7f2f2;
+    background-color: #ae6363;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<%- include('../templates/aheader') %>
+ <div class="mf bg-warning bg-gradient">
+     <div class="hp3">
+   <div class="container vs">     
+<form action="/admin/student_view" method="post">
+  <div class="form-group">
+    <label for="eno">Enter Enrollment Number</label>
+    <input
+      type="text"
+      name="eno"
+      id="eno"
+      class="form-control"
+      placeholder="Enter enrollment number"
+      value="<%= stu.eno %>"
+    />
+  </div>
+  <br />
+  <button class="btn btn-success w-100 bt" type="submit">Find</button>
+</form>
+
+ <div class="container">
+  <table class="table table-striped table-bordered">
+    <tr>
+    <th>S.No</th>
+  <th>Name</th>
+  <th>E-mail</th>
+  <th>Address</th>
+  <th>Course</th>
+  <th>Streme</th>
+  <th>Enrollment No</th>
+</tr>
+ 
+  
+<tr>
+    
+    <td><%= stu.id %></td>
+    <td><%= stu.name %></td>
+    <td><%= stu.email %></td>
+    <td><%= stu.address %></td>
+    <td><%= stu.course %></td>
+    <td><%= stu.streme %></td>
+    <td><%= stu.eno %></td>
+</tr>
+ 
+</table>
+ </div>
+     </div>
+     </div>
+</div>
+<%- include('../templates/afooter') %>
